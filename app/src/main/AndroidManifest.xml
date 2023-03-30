@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.simplemobiletools.smsmessenger"
+    package="com.muneeb.smsmessenger"
     android:installLocation="auto">
 
     <uses-permission android:name="android.permission.READ_SMS" />
@@ -32,7 +32,7 @@
     <uses-feature android:name="android.hardware.telephony" />
 
     <application
-        android:name=".App"
+        android:name="com.muneeb.smsmessenger.App"
         android:allowBackup="true"
         android:appCategory="productivity"
         android:icon="@mipmap/ic_launcher"
@@ -134,7 +134,7 @@
             android:parentActivityName=".activities.ThreadActivity" />
 
         <activity
-            android:name=".activities.ConversationDetailsActivity"
+            android:name="com.muneeb.smsmessenger.activities.ConversationDetailsActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:label="@string/conversation_details"
@@ -197,7 +197,7 @@
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.simplemobiletools.smsmessenger.action.mark_as_read" />
+                <action android:name="com.muneeb.smsmessenger.action.mark_as_read" />
             </intent-filter>
         </receiver>
 
@@ -206,7 +206,7 @@
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.simplemobiletools.smsmessenger.action.reply" />
+                <action android:name="com.muneeb.smsmessenger.action.reply" />
             </intent-filter>
         </receiver>
 
